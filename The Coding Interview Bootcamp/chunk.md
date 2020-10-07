@@ -18,6 +18,8 @@ function chunk(array, size) {
 
 ## Feedback
 
+2번째 솔루션과 같은 slice를 이용해 해결했다.
+
 <br/>
 
 ## Solution 1st
