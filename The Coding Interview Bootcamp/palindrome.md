@@ -2,7 +2,7 @@
 
 ## My Code
 
-```
+```javascript
 function palindrome(str) {
   const reverseStr = str.split("").reduce((reverse, char) => {
     return char + reverse;
@@ -24,7 +24,7 @@ reduce구문을 익히기 위해서 사용하려고 노력했다.
 
 <br/>
 
-```
+```javascript
 function palindrome(str) {
   const reversed = str.split("").reverse().join("");
   return str === reversed;
@@ -43,7 +43,7 @@ reverse-string 에서 사용한 reverse() Method를 사용해 구현했다.
 - every() 자체가 true,false를 반환하기 때문에 자체를 return 해준다.
 - 단, every를 사용했을 시 중복된 검사가 한번씩 일어나게 된다.
 
-```
+```javascript
 function palindrome(str) {
   return str.split("").every((char, idx) => {
     return char === str[str.length - 1 - idx];

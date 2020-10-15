@@ -2,8 +2,7 @@
 
 ## My Code
 
-```
-
+```javascript
 function fizzBuzz(n) {
   const three = 3;
   const five = 5;

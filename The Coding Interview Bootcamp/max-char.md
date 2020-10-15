@@ -2,26 +2,26 @@
 
 ## My Code
 
-```
+```javascript
 function maxChar(str) {
-    let res = [];
-    let flag = true;
-    for (let x of str) {
-      flag = true;
-      for (let y of res) {
-        if (y.char === x) {
-          y.cnt++;
-          flag = false;
-          break;
-        }
-      }
-      if (flag) {
-        res.push({ char: x, cnt: 1 });
+  let res = [];
+  let flag = true;
+  for (let x of str) {
+    flag = true;
+    for (let y of res) {
+      if (y.char === x) {
+        y.cnt++;
+        flag = false;
+        break;
       }
     }
-    res.sort((a, b) => b.cnt - a.cnt);
-    return res[0].char;
+    if (flag) {
+      res.push({ char: x, cnt: 1 });
+    }
   }
+  res.sort((a, b) => b.cnt - a.cnt);
+  return res[0].char;
+}
 ```
 
 <br/>
@@ -40,7 +40,7 @@ object로 표현하고 싶었지만 object로 정렬을 못한다고만 생각�
 
 ojbect안에 key들을 loop 하고 싶을 때는 for in 으로 key 값에 접근하면 된다.
 
-```
+```javascript
 function maxChar(str) {
   const charMap = {};
   let max = 0;

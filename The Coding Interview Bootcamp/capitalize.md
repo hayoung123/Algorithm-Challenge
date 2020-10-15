@@ -2,7 +2,7 @@
 
 ## My Code
 
-```
+```javascript
 function capitalize(str) {
   return str
     .split(" ")
@@ -25,7 +25,7 @@ function capitalize(str) {
 
 내 풀이와 같은 방법으로 풀었다
 
-```
+```javascript
 function capitalize(str) {
   const word = [];
   for (let x of str.split(" ")) {
@@ -34,6 +34,7 @@ function capitalize(str) {
   return word.join(" ");
 }
 ```
+
 <br/>
 
 ## Soluton 2nd
@@ -47,7 +48,7 @@ function capitalize(str) {
 
 ### code
 
-```
+```javascript
 function capitalize(str) {
   let result = str[0].toUpperCase();
 

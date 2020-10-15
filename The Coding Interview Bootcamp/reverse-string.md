@@ -2,7 +2,7 @@
 
 ## My Code
 
-```
+```javascript
 function reverse(str) {
   let i = str.length - 1,
     answer = "";
@@ -34,7 +34,7 @@ bulit in javascript method
 3. join
 4. return
 
-```
+```javascript
 function reverse(str){
     <!-- const arr = str.split('');
     arr.reverse();
@@ -50,10 +50,10 @@ function reverse(str){
 
 <br/>
 
-```
+```javascript
 function reverse(str) {
   let reversed = "";
-  for(let character of str){
+  for (let character of str) {
     reversed = character + reversed;
   }
 }
@@ -65,7 +65,7 @@ function reverse(str) {
 
 <br/>
 
-```
+```javascript
 function reverse(str) {
   str.split("").reduce((reversed, character) => {
     return character + reversed;

@@ -2,7 +2,7 @@
 
 ## My Code
 
-```
+```javascript
 function chunk(array, size) {
   const res = [];
   const cnt = Math.ceil(array.length / size);
@@ -31,7 +31,7 @@ function chunk(array, size) {
 
 ### code
 
-```
+```javascript
 function chunk(array, size) {
   const chunked = [];
   for (let elem of array) {
@@ -58,7 +58,7 @@ over 되면 chunked에 push 해주면서 last를 업데이트 해주는 느낌�
 
 ## Solution 2nd
 
-```
+```javascript
 function chunk(array, size) {
   const chunked = [];
   let index = 0;

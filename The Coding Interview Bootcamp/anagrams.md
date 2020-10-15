@@ -2,7 +2,7 @@
 
 ## My Code
 
-```
+```javascript
 function anagrams(stringA, stringB) {
   let strA = stringA.replace(/[^\w]/g, "").toLowerCase();
   let strB = stringB.replace(/[^\w]/g, "").toLowerCase();
@@ -24,6 +24,7 @@ function anagrams(stringA, stringB) {
   return true;
 }
 ```
+
 <br/>
 
 1. stringA, stringB를 공백,특수문자를 제거하고 소문자로 바꾼다.
@@ -35,43 +36,40 @@ function anagrams(stringA, stringB) {
 
 ## 1st Solution
 
-- 나와 같이 object에 넣어서 한다. 
+- 나와 같이 object에 넣어서 한다.
 - 하지만, 두개의 object를 만들어서 그 object를 비교해준다.
 
-
-```
+```javascript
 function anagrams(stringA, stringB) {
-    const charMapA = buildCharMap(stringA);
-    const charMapB = buildCharMap(stringB);
-    if (Object.keys(charMapA).length !== Object.keys(charMapB).length)
-      return false;
-    for (let x in charMapA) {
-      if (charMapA[x] !== charMapB[x]) return false;
-    }
-    return true;
+  const charMapA = buildCharMap(stringA);
+  const charMapB = buildCharMap(stringB);
+  if (Object.keys(charMapA).length !== Object.keys(charMapB).length)
+    return false;
+  for (let x in charMapA) {
+    if (charMapA[x] !== charMapB[x]) return false;
   }
-  function buildCharMap(str) {
-    const charMap = {};
-    for (let x of str.replace(/[^\w]/g, "").toLowerCase()) {
-      charMap[x] = charMap[x] + 1 || 1;
-    }
-    return charMap;
+  return true;
+}
+function buildCharMap(str) {
+  const charMap = {};
+  for (let x of str.replace(/[^\w]/g, "").toLowerCase()) {
+    charMap[x] = charMap[x] + 1 || 1;
   }
+  return charMap;
+}
 ```
 
-
-`charMapA[x] !== charMapB[x]` 
+`charMapA[x] !== charMapB[x]`
 
 Object에서 이렇게 비교했을 때 charMapB Object.keys에 x 가 없을 지라도 비교는 실행되고 `false`
-
 
 <br/>
 
 ## 2nd Solution
 
 - 배열의 sort 기능을 이용해서 해결했다.
-  
-```
+
+```javascript
 function anagrams(stringA, stringB) {
   return cleanString(stringA) === cleanString(stringB);
 }

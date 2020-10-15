@@ -2,7 +2,7 @@
 
 ## My Code
 
-```
+```javascript
 function steps(n) {
   for (let i = 1; i < n + 1; i++) {
     let word = "";
@@ -26,9 +26,7 @@ function steps(n) {
 
 2차원 구조를 진행할 때는 `row` 와 `coulmn`을 잘 활용하는 방법을 익혀야 한다.
 
-회귀는 예전부터 계속 연습해 오고 있지만 많이 어색하다. 계속해서 반복하는 방법 밖에 없을 것같다.  간단한 반복문등을 회귀로 해결하는 등 회귀를 자주 접해서 익숙 해져야 할 것 같다.
-
-
+회귀는 예전부터 계속 연습해 오고 있지만 많이 어색하다. 계속해서 반복하는 방법 밖에 없을 것같다. 간단한 반복문등을 회귀로 해결하는 등 회귀를 자주 접해서 익숙 해져야 할 것 같다.
 
 <br/>
 
@@ -36,11 +34,9 @@ function steps(n) {
 
 column,row로 나누어서 `column <= row` 일 때는 `#`을 넣고 아닐 때는 `' '` 을 넣는다.
 
-
-
 ### code
 
-```
+```javascript
 function steps(n) {
   let stair = "";
 
@@ -57,13 +53,14 @@ function steps(n) {
 <br/>
 
 ## Solution 2nd
+
 ### Recursion
 
 `if row===n` : 문제끝 `return`
 
 `if stair.length===n` : 한 줄 (row) 끝 step(n,row+1)
 
-`if stair.lenght <= row` : #을 stair에 입력 `else` ' '(공백) `step(n,row+1,stair)` 
+`if stair.lenght <= row` : #을 stair에 입력 `else` ' '(공백) `step(n,row+1,stair)`
 
 <br/>
 
@@ -73,7 +70,7 @@ function steps(n) {
 
 ### code
 
-```
+```javascript
 function steps(n, row = 0, stair = "") {
   if (n === row) return;
   if (stair.length === n) {

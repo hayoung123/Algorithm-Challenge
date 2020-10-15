@@ -2,7 +2,7 @@
 
 ## My Code
 
-```
+```javascript
 function reverseInt(n) {
   if (Math.sign(parseInt(n)) >= 0) {
     return parseInt(n.toString().split("").reverse().join(""));
@@ -36,9 +36,8 @@ function reverseInt(n) {
 
 <br/>
 
-```
+```javascript
 function reverseInt(n) {
-
   const reversed = n.toString().split("").reverse().join("");
 
   //if(n<0) return parseInt(reversed) * -1
