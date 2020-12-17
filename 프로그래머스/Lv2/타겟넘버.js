@@ -5,7 +5,7 @@ dfs로 해결.
 */
 function solution(numbers, target) {
   function dfs(i, sum) {
-    if (i >= numbers.length) {
+    if (i === numbers.length) {
       if (sum === target) answer++;
     } else {
       dfs(i + 1, sum + numbers[i]);
