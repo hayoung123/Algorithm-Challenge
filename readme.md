@@ -59,3 +59,15 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 문제: https://programmers.co.kr/learn/courses/30/lessons/67257
 
 [풀이 링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/%EC%88%98%EC%8B%9D%20%EC%B5%9C%EB%8C%80%ED%99%94.js)
+
+### 스킬트리
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/49993
+
+[풀이 링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC)
+
+### 멀쩡한 사각형
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/62048
+
+[풀이 링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EB%A9%80%EC%A9%A1%ED%95%9C-%EC%82%AC%EA%B0%81%ED%98%95)
