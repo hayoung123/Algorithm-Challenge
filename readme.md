@@ -72,6 +72,18 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이 링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EB%A9%80%EC%A9%A1%ED%95%9C-%EC%82%AC%EA%B0%81%ED%98%95)
 
+### 소수 만들기
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12977
+
+[풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%86%8C%EC%88%98-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+
+### 점프와 순간이동
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12980
+
+[풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%86%8C%EC%88%98-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+
 # LeetCode
 
 ### Increasing Order Search Tree
