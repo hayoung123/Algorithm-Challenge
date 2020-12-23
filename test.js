@@ -43,9 +43,8 @@
 //   console.log('------------------------------');
 // }
 
-let answer = [];
-
 const dfs = (nums, num, arr = []) => {
+  let answer = [];
   if (num === 3) answer.push([...arr]);
   else {
     for (let i = 0; i < nums.length; i++) {
@@ -54,6 +53,7 @@ const dfs = (nums, num, arr = []) => {
       arr.pop();
     }
   }
+  return answer;
 };
-dfs([1, 2, 3, 4], 0);
-console.log(answer);
+
+console.log(dfs([1, 2, 3, 4], 0));
