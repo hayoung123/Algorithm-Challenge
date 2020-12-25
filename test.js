@@ -43,17 +43,7 @@
 //   console.log('------------------------------');
 // }
 
-const dfs = (nums, num, arr = []) => {
-  let answer = [];
-  if (num === 3) answer.push([...arr]);
-  else {
-    for (let i = 0; i < nums.length; i++) {
-      arr.push(nums[i]);
-      dfs(nums.slice(i + 1), num + 1, arr);
-      arr.pop();
-    }
-  }
-  return answer;
-};
-
-console.log(dfs([1, 2, 3, 4], 0));
+let k = [];
+let a = new String('hello');
+k.push(a);
+console.log(k);

@@ -11,13 +11,18 @@ function solution(record) {
       stateArr.push([state, id]);
     }
   });
-  stateArr.forEach((data) => {
+  //   stateArr.forEach((data) => {
+  //     const [state, id] = data;
+  //     if (state === 'Enter') {
+  //       answer.push(`${user[id]}님이 들어왔습니다.`);
+  //     } else {
+  //       answer.push(`${user[id]}님이 나갔습니다.`);
+  //     }
+  //   });
+  //   return answer;
+  stateArr.map((data) => {
     const [state, id] = data;
-    if (state === 'Enter') {
-      answer.push(`${user[id]}님이 들어왔습니다.`);
-    } else {
-      answer.push(`${user[id]}님이 나갔습니다.`);
-    }
+    if (state === 'Enter') return `${user[id]}님이 들어왔습니다.`;
+    else return `${user[id]}님이 나갔습니다.`;
   });
-  return answer;
 }
