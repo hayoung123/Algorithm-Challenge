@@ -4,7 +4,7 @@ function solution(relation) {
   const indexArr = Array.from({ length: relation[0].length }, (_, idx) => idx);
 
   //Attribute의 인덱스배열의 모든 부분집합을 구한다.
-  let caseIndexArr = allCase(indexArr);
+  let caseIndexArr = powerSet(indexArr);
 
   while (caseIndexArr.length) {
     const nowCase = caseIndexArr[0];
@@ -35,18 +35,18 @@ function solution(relation) {
 function checkOverlap(arr) {
   const setArr = new Set();
   for (let x of arr) {
-    if (setArr.has(x.join(''))) return false;
-    else setArr.add(x.join(''));
+    if (setArr.has(x.join(""))) return false;
+    else setArr.add(x.join(""));
   }
   return true;
 }
 //모든 부분집합 (멱집합)
-function allCase(arr) {
+function powerSet(arr) {
   let check = new Array(arr.length).fill(0);
-  let indexArr = [];
+  let powerSetArr = [];
   const dfs = (depth) => {
     if (depth === check.length) {
-      indexArr.push(arr.filter((v, idx) => check[idx]));
+      powerSetArr.push(arr.filter((_, idx) => check[idx]));
     } else {
       check[depth] = 1;
       dfs(depth + 1);
@@ -55,7 +55,7 @@ function allCase(arr) {
     }
   };
   dfs(0);
-  indexArr.sort((a, b) => a.length - b.length);
-  indexArr = indexArr.filter((v) => v.length);
-  return indexArr;
+  powerSetArr.sort((a, b) => a.length - b.length);
+  powerSetArr = powerSetArr.filter((v) => v.length);
+  return powerSetArr;
 }
