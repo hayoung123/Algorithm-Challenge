@@ -120,6 +120,12 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%BA%90%EC%8B%9C)
 
+### 방금그곡
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/17683#
+
+[풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EB%B0%A9%EA%B8%88%EA%B7%B8%EA%B3%A1)
+
 # LeetCode
 
 ### Increasing Order Search Tree

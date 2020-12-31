@@ -20,7 +20,7 @@ function solution(cacheSize, cities) {
   return answer;
 }
 
-console.log(solution(1, ["k", "k", "k", "k", "k", "k", "k"]));
+console.log(solution(0, ["k", "k", "k", "k", "k", "k", "k"]));
 console.log(
   solution(0, [
     "Jeju",
@@ -34,3 +34,4 @@ console.log(
     "Seoul",
   ])
 );
+console.log(solution(2, ["a", "b", "a", "c", "b"]));
