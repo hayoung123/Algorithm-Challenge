@@ -144,6 +144,12 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JSn%EC%A7%84%EC%88%98-%EA%B2%8C%EC%9E%84)
 
+### 쿼드압축 후 개수 세기
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/68936
+
+[풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%BF%BC%EB%93%9C%EC%95%95%EC%B6%95-%ED%9B%84-%EA%B0%9C%EC%88%98-%EC%84%B8%EA%B8%B0)
+
 # LeetCode
 
 ### Increasing Order Search Tree
