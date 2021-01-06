@@ -150,6 +150,12 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%BF%BC%EB%93%9C%EC%95%95%EC%B6%95-%ED%9B%84-%EA%B0%9C%EC%88%98-%EC%84%B8%EA%B8%B0)
 
+### 이진 변환 반복하기
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/70129
+
+[풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%9D%B4%EC%A7%84-%EB%B3%80%ED%99%98-%EB%B0%98%EB%B3%B5%ED%95%98%EA%B8%B0)
+
 # LeetCode
 
 ### Increasing Order Search Tree
