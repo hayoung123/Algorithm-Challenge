@@ -168,6 +168,10 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%98%AC%EB%B0%94%EB%A5%B8-%EA%B4%84%ED%98%B8-%EB%8B%A4%EC%9D%8C-%ED%81%B0-%EC%88%AB%EC%9E%90)
 
+### 땅따먹기
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12913#
+
 # LeetCode
 
 ### Increasing Order Search Tree
