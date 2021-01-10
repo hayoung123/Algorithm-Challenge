@@ -185,3 +185,5 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 ### 2839 - 설탕배달
 
 문제: https://www.acmicpc.net/problem/2839
+
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%EB%B0%B1%EC%A4%80/2839.js)
