@@ -179,3 +179,9 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 문제: https://leetcode.com/problems/increasing-order-search-tree/
 
 [풀이링크](https://velog.io/@proshy/LeetCodeJSIncreasing-Order-Search-Tree)
+
+# 백준
+
+### 2839 - 설탕배달
+
+문제: https://www.acmicpc.net/problem/2839
