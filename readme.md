@@ -172,6 +172,10 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12913#
 
+### 숫자의 표현
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12924
+
 # LeetCode
 
 ### Increasing Order Search Tree
