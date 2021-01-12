@@ -184,31 +184,31 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/1845
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/%ED%8F%B0%EC%BC%93%EB%AA%AC.js)
 
 ### 최솟값 만들기
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12941
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/%EC%B5%9C%EC%86%9F%EA%B0%92%EB%A7%8C%EB%93%A4%EA%B8%B0.js)
 
 ### 행렬의 곱셈
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12949
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/%ED%96%89%EB%A0%AC%EC%9D%98%20%EA%B3%B1%EC%85%88.js)
 
 ### JadenCase 문자열 만들기
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12951
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/JadenCase%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%A7%8C%EB%93%A4%EA%B8%B0.js)
 
 ### N개의 최소공배수
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12953#
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/N%EA%B0%9C%EC%9D%98%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98.js)
 
 # LeetCode
 
