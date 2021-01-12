@@ -186,6 +186,10 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이링크]()
 
+### 최솟값 만들기
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12941
+
 # LeetCode
 
 ### Increasing Order Search Tree
