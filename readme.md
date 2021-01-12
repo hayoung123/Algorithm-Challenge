@@ -190,6 +190,26 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12941
 
+[풀이링크]()
+
+### 행렬의 곱셈
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12949
+
+[풀이링크]()
+
+### JadenCase 문자열 만들기
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12951
+
+[풀이링크]()
+
+### N개의 최소공배수
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12953#
+
+[풀이링크]()
+
 # LeetCode
 
 ### Increasing Order Search Tree

@@ -42,3 +42,14 @@
 //   console.log(solution(x));
 //   console.log('------------------------------');
 // }
+
+function gcd(a, b) {
+  while (a % b !== 0) {
+    let tmp = a % b;
+    a = b;
+    b = tmp;
+  }
+  return b;
+}
+
+console.log(gcd(9, 15));
