@@ -1,64 +1,141 @@
 /*
-1차 시도는 각 보석마다 map처럼 인덱스를 매핑해서 해결하려고 시도해봤지만 결국 실패했다.
-
-1차는 아니지만 답만은 맞춘 것같은
-1차 풀이 
-
-배열을 다돌면서 가장짧은 것을 출력하게 하는것 하지만 시간초과
-2중 for문을 어떻게 단축시켜야할지 고민해야할 것 같다.
+채점 결과
+정확성: 33.3
+효율성: 44.4
+합계: 77.8 / 100.0
 */
-
 function solution(gems) {
-  let answer = [];
-  let distance = 214700000;
-  let gemArr = [...new Set(gems)];
+  let answer = [0, 100001];
+
+  let gemLen = new Set(gems).size;
+  let gemMap = new Map();
+
   for (let i = 0; i < gems.length; i++) {
-    for (let j = i; j < gems.length; j++) {
-      let tmpGems = [...new Set(gems.slice(i, j + 1))];
-      if (tmpGems.length === gemArr.length) {
-        if (distance > j - i) {
-          answer = [[i + 1, j + 1]];
-          distance = j - i;
-        } else if (distance === j - 1) {
-          answer.push([i + 1, j + 1]);
-        }
+    gemMap.set(gems[i], i + 1);
+
+    if (gemMap.size === gemLen) {
+      const tmpIdx = getIdx(gemMap);
+      const answerLen = answer[1] - answer[0];
+      const mapLen = tmpIdx[1] - tmpIdx[0];
+      if (answerLen > mapLen) {
+        answer = tmpIdx;
       }
     }
   }
-  return answer[0];
+
+  return answer;
+}
+
+function getIdx(map) {
+  let values = map.values();
+  let idxArr = [];
+  for (let x of values) {
+    idxArr.push(x);
+  }
+
+  return [Math.min(...idxArr), Math.max(...idxArr)];
 }
 
 /*
-시간을 줄이기 위한 시도 1
-[...new Set()] 으로 중복을 제거해주는 과정이 오래 걸린다 생각해 gemArr에 있는 요소들이
-들어있는지 check하는 함수를 따로 만들었다. 
+위의 Map을 object로 바꿔서 시도했다.
+채점 결과
+정확성: 33.3
+효율성: 4.4
+합계: 37.8 / 100.0
 
-그 결과 해결되지는 않았지만 시간초과났던 4개의 문제가 해결됐다. 
-중복제거해주는 것이 시간 소요가 오래걸리나 보다.
-
-slice도 뭔가 오래 걸릴 것같아 보이긴하고 가장 큰 문제는 for문 2번을 어떻게 효율적으로 줄이나 생각해봐야곘다.
+Map이 더 낫나보다..
 */
 function solution(gems) {
-  let answer = [];
-  let distance = 214700000;
-  let gemArr = [...new Set(gems)];
+  let answer = [0, 100001];
+
+  let gemLen = new Set(gems).size;
+  let gemObj = new Map();
+
   for (let i = 0; i < gems.length; i++) {
-    for (let j = i; j < gems.length; j++) {
-      if (checkValue(gemArr, gems.slice(i, j + 1))) {
-        if (distance > j - i) {
-          answer = [[i + 1, j + 1]];
-          distance = j - i;
-        } else if (distance === j - 1) {
-          answer.push([i + 1, j + 1]);
-        }
+    gemObj[gems[i]] = i + 1;
+
+    if (Object.keys(gemObj).length === gemLen) {
+      const tmpIdx = getIdx(Object.values(gemObj));
+      const answerLen = answer[1] - answer[0];
+      const mapLen = tmpIdx[1] - tmpIdx[0];
+      if (answerLen > mapLen) {
+        answer = tmpIdx;
       }
     }
   }
-  return answer[0];
+
+  return answer;
 }
-function checkValue(needArr, checkedArr) {
-  for (const x of needArr) {
-    if (!checkedArr.includes(x)) return false;
+
+function getIdx(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
+
+/*
+채점 결과
+정확성: 33.3
+효율성: 62.2
+합계: 95.6 / 100.0
+다른 풀이의 시간은 조금 줄었다.
+*/
+
+function solution(gems) {
+  let answer = [0, 100001];
+
+  let gemLen = new Set(gems).size;
+  let gemMap = new Map();
+  let min = 0;
+
+  for (let i = 0; i < gems.length; i++) {
+    gemMap.set(gems[i], i + 1); //새로운 값이 됐다.
+    if (gems[min - 1] === gemMap.get(gems[i])) {
+      min = getMin(gemMap);
+    }
+
+    if (gemMap.size === gemLen) {
+      const tmpIdx = [min, i + 1];
+      const answerLen = answer[1] - answer[0];
+      const mapLen = tmpIdx[1] - tmpIdx[0];
+
+      if (answerLen > mapLen) answer = tmpIdx;
+    }
   }
-  return true;
+  return answer;
+}
+
+function getMin(map) {
+  let values = map.values();
+  let min = 100001;
+  for (let x of values) {
+    if (x < min) min = x;
+  }
+  return min;
+}
+
+/*
+드디어 정답이다
+어떻게하면 Map에 제일 작은 수를 바로 가져올 수 있을 까 생각하다가 구현해냈다.
+Map은 순서를 유지시켜주는 특성으로 삭제를 하고 추가를 했다.
+=> 즉 맨앞 value값이 가장 작은 값이 된다.
+*/
+function solution(gems) {
+  let answer = [0, 100001];
+
+  let gemLen = new Set(gems).size;
+  let gemMap = new Map();
+
+  for (let i = 0; i < gems.length; i++) {
+    gemMap.delete(gems[i]);
+    gemMap.set(gems[i], i + 1); //새로운 값이 됐다.
+
+    if (gemMap.size === gemLen) {
+      const tmpIdx = [gemMap.values().next().value, i + 1];
+      const answerLen = answer[1] - answer[0];
+      const mapLen = tmpIdx[1] - tmpIdx[0];
+      if (answerLen > mapLen) {
+        answer = tmpIdx;
+      }
+    }
+  }
+  return answer;
 }
