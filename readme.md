@@ -210,6 +210,18 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/N%EA%B0%9C%EC%9D%98%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98.js)
 
+### 짝지어 제거하기
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12973
+
+[풀이링크]()
+
+### 예상 대진표
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/12985
+
+[풀이링크]()
+
 # LeetCode
 
 ### Increasing Order Search Tree
