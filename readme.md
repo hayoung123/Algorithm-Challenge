@@ -214,13 +214,13 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12973
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/%EC%A7%9D%EC%A7%80%EC%96%B4%20%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0.js)
 
 ### 예상 대진표
 
 문제: https://programmers.co.kr/learn/courses/30/lessons/12985
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv2/%EC%98%88%EC%83%81%20%EB%8C%80%EC%A7%84%ED%91%9C.js)
 
 # LeetCode
 
