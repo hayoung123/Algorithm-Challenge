@@ -230,6 +230,16 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 [풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EB%B3%B4%EC%84%9D%EC%87%BC%ED%95%91)
 
+### 추석 트래픽
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/17676
+
+[풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%B6%94%EC%84%9D-%ED%8A%B8%EB%9E%98%ED%94%BD)
+
+### 2 x n 타일링
+
+[풀이링크]()
+
 # LeetCode
 
 ### Increasing Order Search Tree
