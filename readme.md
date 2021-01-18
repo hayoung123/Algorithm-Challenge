@@ -238,7 +238,13 @@ Udemy 강좌에서 배운 내용을 복습겸 작성할 폴더
 
 ### 2 x n 타일링
 
-[풀이링크]()
+[풀이링크](https://github.com/hayoung123/Algorithm-Challenge/blob/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/Lv3/2xn%ED%83%80%EC%9D%BC%EB%A7%81.js)
+
+### 셔틀버스
+
+문제: https://programmers.co.kr/learn/courses/30/lessons/17678
+
+[풀이링크](https://velog.io/@proshy/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4JS%EC%85%94%ED%8B%80%EB%B2%84%EC%8A%A4)
 
 # LeetCode
 
