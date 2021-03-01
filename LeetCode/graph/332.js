@@ -1,58 +1,45 @@
 //332. Reconstruct Itinerary
 
-// const findItinerary = (tickets) => {
-//   const res = [];
-//   let target = 'JFK';
+/*
+그래프문제.. 어렵다. 어색한건지 어려운건지 감이 정말 안잡힌다.
 
-//   const go = (arr, target = 'JFK', answer = []) => {
-//     if (!arr.length) {
-//       res.push(answer);
-//       return;
-//     }
+그래프 문제인 만큼 graph 객체 형태로 만들고 시작하고 문제에 따라 정렬하자. 
 
-//     const tmp = [];
-//     for (let i = 0; i < arr.length; i++) {
-//       if (arr[i][0] === target) {
-//         tmp.push(arr[i]);
-//       }
-//     }
-//     for (let i = 0; i < tmp.length; i++) {
-//       let restArr = arr.filter((v) => !tmp.includes(v));
-//       restArr = [...restArr];
-//       const targetArr = tmp[i];
-//       go([...restArr, ...tmp], targetArr[1], [...answer, targetArr[0]]);
-//     }
-//   };
+dfs함수
 
-//   go(tickets);
+각 from을 인자로 받는 dfs이다. 
+이제 받은 from의 to들을 다시 dfs로 보낸다. 
+graph[from](값)이 없는 경우에는 push를 해주면서 dfs껍질을 벗겨내면된다. 
 
-//   return res;
-// };
-var findItinerary = function (tickets) {
-  var map = {};
-  var res = [];
-  for (var i = 0; i < tickets.length; i++) {
-    var dep = tickets[i][0];
-    var des = tickets[i][1];
-    if (map[dep]) {
-      map[dep].push(des);
-    } else {
-      map[dep] = [des];
-    }
+이때 itinerary에 역순으로 push되기 때문에 마지막에 reverse해준다. 
+*/
+const findItinerary = (tickets) => {
+  const graph = {};
+  let itinerary = [];
+  //graph객체 만들기
+  tickets.forEach((v) => {
+    const [from, to] = v;
+    if (graph[from]) graph[from].push(to);
+    else graph[from] = [to];
+  });
+
+  //graph객체 value들 정렬
+  for (let key in graph) {
+    graph[key].sort((a, b) => a.localeCompare(b));
   }
-  for (let loc in map) {
-    map[loc].sort();
-  }
-  console.log(map);
-  var dfs = function (node) {
-    var des = map[node];
-    while (des && des.length > 0) {
-      dfs(des.shift());
+
+  //JFK가 key값부터 시작해 정렬됐으니 앞에값부터 dfs
+  const dfs = (from = 'JFK') => {
+    while (graph[from] && graph[from].length) {
+      const to = graph[from].shift();
+      dfs(to);
     }
-    res.push(node);
+    itinerary.push(from);
   };
+
   dfs('JFK');
-  return res.reverse();
+
+  return itinerary.reverse();
 };
 
 console.log(
