@@ -40,3 +40,5 @@ console.log(
     1
   )
 );
+
+const graph = times,n 
