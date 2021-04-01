@@ -8,37 +8,21 @@ const networkDelayTime = (times, N, K) => {
     if (graph[from]) graph[from].push({ to, cost });
     else graph[from] = [{ to, cost }];
   }
-
-  const go = (from, count = 0, before) => {
-    if (!graph[from] || !graph[from].length) {
-      if (count) totalCost.push(count);
-      return;
-    }
-    const nodes = graph[from];
-    while (nodes.length) {
-      const { to, cost } = graph[from].pop();
-      if (to === before) {
-        totalCost.push(count);
-      } else {
-        go(to, count + cost, from);
-      }
-    }
-  };
-  go(K);
-  console.log(totalCost);
-  return totalCost.length ? Math.max(...totalCost) : -1;
 };
 
-console.log(
-  networkDelayTime(
-    [
-      [1, 2, 1],
-      [2, 3, 2],
-      [1, 3, 2],
-    ],
-    3,
-    1
-  )
+const parser = (data, n) => {
+  const INF = Infinity;
+  const graph = Array.from(new Array(n), () => new Array(n).fill(INF));
+  graph.
+};
+
+parser(
+  [
+    [2, 1, 1],
+    [2, 3, 1],
+    [3, 4, 1],
+  ],
+  4
 );
 
 const graph = times,n 

@@ -1,55 +1,13 @@
-// function solution(gems) {
-//   let answer;
-//   let distance = 214700000;
-//   let gemArr = [...new Set(gems)];
-//   let gemMap = new Map();
-//   // 보석별 인덱스 배열
-//   for (let i = 0; i < gems.length; i++) {
-//     if (!gemMap.has(gems[i])) {
-//       gemMap.set(gems[i], i);
-//     }
-//   }
-// }
+const map = new Map([
+  ['a', 1],
+  ['b', 2],
+  ['c', 3],
+]);
 
-// //prettier-ignore
-// // const k =[["ZZZ", "YYY", "NNNN", "YYY", "BBB"]]
-// const k = [
-//   [
-//     'DIA',
-//     'RUBY',
-//     'RUBY',
-//     'DIA',
-//     'DIA',
-//     'EMERALD',
-//     'SAPPHIRE',
-//     'DIA',
-//     'EMERALD',
-//     'SAPPHIRE',
-//     'EMERALD',
-//     'SAPPHIRE',
-//     'RUBY',
-//     'RUBY',
-//     'DIA',
-//     'EMERALD',
-//     'SAPPHIRE'
-//   ],
-//   ['AA', 'AB', 'AC', 'AA', 'AC'],
-//   ['XYZ', 'XYZ', 'XYZ'],
-//   ['ZZZ', 'YYY', 'NNNN', 'YYY', 'BBB']
-// ];
-
-// for (let x of k) {
-//   console.log(solution(x));
-//   console.log('------------------------------');
-// }
-
-function gcd(a, b) {
-  while (a % b !== 0) {
-    let tmp = a % b;
-    a = b;
-    b = tmp;
-  }
-  return b;
-}
-
-console.log(gcd(9, 15));
+const mapKey = map.keys();
+const k = mapKey[Symbol.iterator]();
+console.log(k);
+for (let x of mapKey) console.log(x);
+console.log(k);
+for (let x of k) console.log(x);
+console.log(k);
