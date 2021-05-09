@@ -20,7 +20,7 @@ const readline = require('readline');
 const matchKeyword = (keywords, checkWord) => {
   let count = 0;
   for (let i = 0; i < keywords.length; i++) {
-    if (keywords[i].indexOf(checkWord) >= 0) count++;
+    if (keywords[i].match(/checkWord/)) count++;
   }
   console.log(count);
 };

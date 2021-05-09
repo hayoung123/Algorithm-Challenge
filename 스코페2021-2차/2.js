@@ -73,5 +73,5 @@ const dfs = (from, cityCount = 0, sum = 0) => {
 };
 
 dfs(startPoint);
-console.log(totalCost);
+
 console.log(Math.min(...totalCost));
